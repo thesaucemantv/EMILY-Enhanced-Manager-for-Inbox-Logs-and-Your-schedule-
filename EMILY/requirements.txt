@@ -1,0 +1,43 @@
+# RUN THIS COMMAND:
+# pip install -r requirements.txt
+
+# Core agent frameworks
+langgraph
+arcadepy
+
+# Web server
+flask
+flask-cors
+
+# Google integrations
+google-api-python-client
+google-auth
+google-auth-oauthlib
+
+# LLM tooling
+openai
+
+# Dev tools
+python-dotenv
+tqdm
+
+# Optional: Schema + Logging
+pydantic
+loguru
+
+# LangGraph + ecosystem tooling
+tavily-python
+wikipedia
+trustcall
+langgraph-cli[inmem]
+langgraph-prebuilt
+langgraph-sdk
+langgraph-checkpoint-sqlite
+
+# LangChain ecosystem
+langsmith
+langchain-community
+langchain-core
+langchain-openai
+langchain-arcade
+langchain-openai
