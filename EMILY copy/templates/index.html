@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent-1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Agent-1</h1>
+        <p>This is a simple web page for Agent-1.</p>
+        <p>It is a work in progress and will be updated regularly.</p>
+        <p>For now, you can use the following text to submit a prompt to the agent.</p>
+
+        <!-- Auth stuff-->
+
+        <form id="hintForm">
+            <label for="hint">Prompt:</label>
+            <input type="text" id="hint" name="hint" placeholder="Enter your prompt here..." required>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        
+        <div id="response" class="response"></div>
+        <!-- Button to load and show daily cron job output -->
+        <button id="loadOutputBtn">Load Daily AI Output</button>
+        <div id="dailyOutput" class="response success" style="display: none;"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
